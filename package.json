@@ -1,0 +1,14 @@
+{
+  "name": "ohgs-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}

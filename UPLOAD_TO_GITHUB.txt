@@ -1,0 +1,16 @@
+OHGS WEBSITE — SIMPLE GITHUB UPLOAD
+
+This package is ready to upload directly to the ROOT of your GitHub repository.
+
+1. Extract OHGS_GITHUB_UPLOAD_READY.zip on your phone or computer.
+2. In the GitHub repository, choose Add file > Upload files.
+3. Upload every extracted file and both folders. Do not upload the ZIP itself.
+4. Check that index.html is visible at the repository root, beside products.html.
+5. Commit the files, then redeploy the repository on Vercel.
+
+The only folders are:
+- media — page photos, the showroom video, and share images
+- api — the optional contact-email function
+
+Important: the logo and the photo at the top of every customer page are also embedded
+inside each HTML file. They remain visible even if GitHub takes time to serve media.
