@@ -86,7 +86,7 @@
   function addRevealMotion(){
     var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if(reduce || !('IntersectionObserver' in window)) return;
-    var items=Array.prototype.slice.call(document.querySelectorAll('.card,.gallery img,.feature-list>div,.location-card,.map-card,.contact-form'));
+    var items=Array.prototype.slice.call(document.querySelectorAll('.card,.gallery img,.feature-list>div,.location-card,.map-card,.contact-form,.video-frame,.video-copy'));
     if(!items.length) return;
     document.body.classList.add('premium-motion');
     items.forEach(function(item){item.classList.add('reveal-item')});

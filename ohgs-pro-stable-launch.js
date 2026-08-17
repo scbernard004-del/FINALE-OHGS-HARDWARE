@@ -64,7 +64,7 @@
       img.fetchPriority = aboveFold ? 'high' : 'low';
       if(!img.dataset.fallbackBound){img.dataset.fallbackBound='1';img.addEventListener('error',function(){if(img.src.indexOf('ohgs-image-fallback.svg')<0){img.src='assets/ohgs-image-fallback.svg'}})}
     });
-    qsa('video').forEach(function(v){v.preload='none';v.playsInline=true;if(!v.controls)v.controls=true});
+    qsa('video').forEach(function(v){v.preload=v.closest('.home-video-stage')?'auto':'metadata';v.playsInline=true;if(!v.controls)v.controls=true});
   }
   function run(){killLoader();applyTheme();applyLang();bind();header();media()}
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run,{once:true}); else run();

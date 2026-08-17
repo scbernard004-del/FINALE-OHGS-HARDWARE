@@ -6,10 +6,17 @@ This package is ready to upload directly to the ROOT of your GitHub repository.
 2. In the GitHub repository, choose Add file > Upload files.
 3. Upload every extracted file and both folders. Do not upload the ZIP itself.
 4. Check that index.html is visible at the repository root, beside products.html.
-5. Commit the files, then redeploy the repository on Vercel.
+5. Commit the files. For the cleanest result, import the repository as a NEW Vercel project.
+
+IMPORTANT CHECKS AFTER DEPLOYMENT:
+- Open /version-check.txt on the deployed domain. It must say v23-award-video-home.
+- The Home page must begin with “WATCH OHGS · REAL SHOWROOM TOUR” and contain six videos: three in the first customer section and three more below.
+- Gallery must contain all nine videos.
+If these checks fail, Vercel is connected to the wrong repository, branch, or root directory.
+This package includes a safe static build command and a fixed dist output, so Vercel publishes this exact release instead of an older build.
 
 The only folders are:
-- media — page photos, the showroom video, and share images
+- media — page photos, all nine videos, posters, and share images
 - api — the optional contact-email function
 
 Important: the logo and the photo at the top of every customer page are also embedded
